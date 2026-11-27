@@ -18,7 +18,7 @@ where $`G`$ is the survivor excitation number. Since the weights $`\|u_x\|^2`$ a
 
 For any Hermitian $`L`$, the SLD variational functional satisfies
 ```math
-2\operatorname{Tr}(\dot\rho L)-\operatorname{Tr}(\rho L^2)
+2\mathrm{Tr}(\dot\rho L)-\mathrm{Tr}(\rho L^2)
  =4\sum_x\|\dot u_x\|^2-\sum_x\|(L+2i(G-\mu_x))u_x\|^2 .
 ```
 Its maximum is the unrefined QFI, attained by a symmetric logarithmic derivative (SLD). Equality with the refined QFI therefore holds precisely when a single Hermitian $`L`$ obeys
@@ -31,7 +31,7 @@ An equivalent criterion is
 \langle u_x,(2G-\mu_x-\mu_y)u_y\rangle=0
 \quad\text{for every }x,y .
 ```
-To see sufficiency, let $`U`$ have columns $`u_x`$ and $`V`$ have columns $`2\dot u_x`$. The pairwise criterion states $`U^\dagger V=V^\dagger U`$. If $`Uc=0`$, then $`U^\dagger Vc=0`$ and $`Vc=2iU\operatorname{diag}(\mu_x)c`$ lies in the span of $`U`$. Thus $`Vc=0`$. The assignment $`u_x\mapsto 2\dot u_x`$ is well defined and Hermitian as a compression on their span. On its orthogonal complement, take the adjoint of the off-diagonal block and choose the remaining diagonal block to be zero.
+To see sufficiency, let $`U`$ have columns $`u_x`$ and $`V`$ have columns $`2\dot u_x`$. The pairwise criterion states $`U^\dagger V=V^\dagger U`$. If $`Uc=0`$, then $`U^\dagger Vc=0`$ and $`Vc=2iU\mathrm{diag}(\mu_x)c`$ lies in the span of $`U`$. Thus $`Vc=0`$. The assignment $`u_x\mapsto 2\dot u_x`$ is well defined and Hermitian as a compression on their span. On its orthogonal complement, take the adjoint of the off-diagonal block and choose the remaining diagonal block to be zero.
 
 ## An optimal probe has every erased charge at every cut
 
@@ -80,7 +80,7 @@ For $`N\ge4`$, choose $`c=\lfloor N/2\rfloor`$ and the Dicke weights $`0,c,N`$ w
 ```math
 \frac{4c-N}{8c},\qquad \frac{N^2}{8c(N-c)},\qquad \frac{3N-4c}{8(N-c)}.
 ```
-They give $`\mathbb E S=N/2`$ and $`\operatorname{Var}S=N^2/8`$. These are the moments of the attaining prior through order two and fix the conditional means for $`t=1`$. The weights are separated by at least two, so the erased bit is determined by the survivor's charge support. An orthogonal syndrome measurement preserves superpositions within each support. For even $`N`$ the state is the corresponding three-weight gnu-code probe.
+They give $`\mathbb E S=N/2`$ and $`\mathrm{Var}S=N^2/8`$. These are the moments of the attaining prior through order two and fix the conditional means for $`t=1`$. The weights are separated by at least two, so the erased bit is determined by the survivor's charge support. An orthogonal syndrome measurement preserves superpositions within each support. For even $`N`$ the state is the corresponding three-weight gnu-code probe.
 
 The dimension bounds leave finite intermediate regimes open. The common-SLD criterion allows overlapping branch supports and may help find further untagged probes even when a spaced Dicke state fails to exist.
 
@@ -90,8 +90,8 @@ Three parallel sensors with independent loss probability $`1/2`$ already give a 
 ```math
 g(v)=\tfrac18 v+\tfrac38 v(1-v)+\tfrac38\frac{v(1-v)}{1+3v}.
 ```
-Here $`v=4\operatorname{Var}(S)/9`$. Strict concavity and $`g'(1/3)=1/4`$, $`g'(1)=-11/32`$ place the unique maximizer $`v_*`$ in the interior. The modulo-three tag attains this optimum by the general construction. A two-level tag already suffices. Prepare the same beta-binomial Dicke amplitudes with the tag $`w\bmod 2`$ for excitation count $`w`$. At $`t=1`$ parity separates the two erased charges. For $`t=2`$, the two extreme charges $`k=0,2`$ share a parity sector, while $`k=1`$ has the opposite sector. By complement symmetry, $`\mu_0+\mu_2=1`$, and the overlaps of $`u_0`$ and $`u_2`$ in survivor-charge sectors zero and one have equal magnitudes and the same positive phase. Their terms cancel in the common-SLD criterion. The receiver can use a common SLD on the even sector and attain the same optimum with one protected qubit.
+Here $`v=4\mathrm{Var}(S)/9`$. Strict concavity and $`g'(1/3)=1/4`$, $`g'(1)=-11/32`$ place the unique maximizer $`v_*`$ in the interior. The modulo-three tag attains this optimum by the general construction. A two-level tag already suffices. Prepare the same beta-binomial Dicke amplitudes with the tag $`w\bmod 2`$ for excitation count $`w`$. At $`t=1`$ parity separates the two erased charges. For $`t=2`$, the two extreme charges $`k=0,2`$ share a parity sector, while $`k=1`$ has the opposite sector. By complement symmetry, $`\mu_0+\mu_2=1`$, and the overlaps of $`u_0`$ and $`u_2`$ in survivor-charge sectors zero and one have equal magnitudes and the same positive phase. Their terms cancel in the common-SLD criterion. The receiver can use a common SLD on the even sector and attain the same optimum with one protected qubit.
 
-Any pure probe attaining this optimum must have mean $`\mathbb ES=3/2`$, because the affine-regression bound is strictly increasing in $`\operatorname{Var}(K)`$ at positive $`v`$ before enforcing that mean. The individual nonnegative regression and refinement gaps must all vanish since every erasure pattern has positive probability. The conditional mean of $`S`$ given each erased string of length $`t`$ must equal the affine regression function from the common attaining beta-binomial prior. For $`t=2`$, put $`\beta=3(1-v_*)/(3v_*-1)\gt 0`$. The slope is $`b=(3+\beta)/(2+\beta)`$, so $`b-1\gt 0`$ and $`1-2b/3\gt 0`$. The moment and subset-exchange argument above applies to these affine coefficients, showing that each two-erasure cut has all three erased charges in its support. Thus the single surviving qubit needs three independent eigenvectors of $`G-iL/2`$, which is impossible on its two-dimensional Hilbert space.
+Any pure probe attaining this optimum must have mean $`\mathbb ES=3/2`$, because the affine-regression bound is strictly increasing in $`\mathrm{Var}(K)`$ at positive $`v`$ before enforcing that mean. The individual nonnegative regression and refinement gaps must all vanish since every erasure pattern has positive probability. The conditional mean of $`S`$ given each erased string of length $`t`$ must equal the affine regression function from the common attaining beta-binomial prior. For $`t=2`$, put $`\beta=3(1-v_*)/(3v_*-1)\gt 0`$. The slope is $`b=(3+\beta)/(2+\beta)`$, so $`b-1\gt 0`$ and $`1-2b/3\gt 0`$. The moment and subset-exchange argument above applies to these affine coefficients, showing that each two-erasure cut has all three erased charges in its support. Thus the single surviving qubit needs three independent eigenvectors of $`G-iL/2`$, which is impossible on its two-dimensional Hilbert space.
 
 The mixed-probe argument again follows by convexity. For fixed register size the QFI of a state evolved by a fixed generator is continuous in the state. In its spectral expression the coefficient $`(\lambda-\lambda')^2/(\lambda+\lambda')`$ extends continuously at zero. Compactness then makes the dimension-one optimum strictly below the attainable tagged optimum. This is a finite-use statement for parallel protocols at fixed transmissivity. The asymptotic i.i.d. erasure bound and its unassisted attainability concern a different limit.

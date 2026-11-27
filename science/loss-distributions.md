@@ -16,14 +16,14 @@ The optimum, permitting a protected register, is
 F^*(p)=N^2\max_{1/N\le v\le1}\sum_{t=0}^N p_t f_t(v).
 ```
 
-The variable $`v`$ is the normalized pre-erasure charge variance $`4\operatorname{Var}(W)/N^2`$. Only one variance is selected, even when different counts favor different charge profiles.
+The variable $`v`$ is the normalized pre-erasure charge variance $`4\mathrm{Var}(W)/N^2`$. Only one variance is selected, even when different counts favor different charge profiles.
 
 ## Upper bound at given charge variance
 
-Use the erased-string refinement from the [fixed-count proof](optimal-probe.md#converse). Conditional on a count $`t\in\{1,\ldots,N-1\}`$, sample the erased set uniformly for this upper bound. Write $`K`$ for the erased charge, $`Y=NK/t`$, and $`V=\operatorname{Var}(W)`$. Hypergeometric sampling gives $`\mathbb E[Y\mid W]=W`$, hence $`\operatorname{Cov}(W,Y)=V`$. Its mean conditional sampling variance is
+Use the erased-string refinement from the [fixed-count proof](optimal-probe.md#converse). Conditional on a count $`t\in\{1,\ldots,N-1\}`$, sample the erased set uniformly for this upper bound. Write $`K`$ for the erased charge, $`Y=NK/t`$, and $`V=\mathrm{Var}(W)`$. Hypergeometric sampling gives $`\mathbb E[Y\mid W]=W`$, hence $`\mathrm{Cov}(W,Y)=V`$. Its mean conditional sampling variance is
 
 ```math
-B=\mathbb E[\operatorname{Var}(Y\mid W)]
+B=\mathbb E[\mathrm{Var}(Y\mid W)]
   =\frac{N^2/4-V-(\mathbb E[W]-N/2)^2}{r_t}.
 ```
 

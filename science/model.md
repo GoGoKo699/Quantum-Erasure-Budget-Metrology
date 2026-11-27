@@ -13,7 +13,7 @@ The generator convention gives local quantum Fisher information (QFI) one for a 
 For an erased set $`A`$, the receiver gets $`A`$ as a classical location flag and holds the surviving sensors and $`R`$. The contents of the erased sites are traced out. For fixed $`A`$, the output is
 
 ```math
-\rho_{\theta,A}=\operatorname{Tr}_{A}\bigl[(U_\theta\otimes I_R)\rho(U_\theta^\dagger\otimes I_R)\bigr].
+\rho_{\theta,A}=\mathrm{Tr}_{A}\bigl[(U_\theta\otimes I_R)\rho(U_\theta^\dagger\otimes I_R)\bigr].
 ```
 
 The erasure choice carries no phase information. The model allows joint preparation, one parallel phase exposure per sensor, calibration at a nominal phase $`\theta_0`$, and a collective measurement that can use the erasure flag. No intermediate control, other signal calls, or observation of the erased contents enters the protocol. All measurement outcomes count.
