@@ -6,7 +6,7 @@ For one parallel exposure to a common unknown phase, with erased positions annou
 
 ```math
 F^*(N,t)=\frac{N^2}{\bigl(1+\sqrt{t(N-1)/(N-t)}\bigr)^2},
-\qquad 1\le t<N.
+\qquad 1\le t\lt N.
 ```
 
 For **30 sensors and three erasures**, the protocol with a four-level protected register achieves **115.20**. Independent Ramsey probes with 27 survivors achieve **27** under the same phase convention.

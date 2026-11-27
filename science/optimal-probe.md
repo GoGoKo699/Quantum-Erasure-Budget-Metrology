@@ -1,6 +1,6 @@
 # Optimal probes for a fixed erasure budget
 
-Each of $`N`$ qubits acquires the phase $`|1\rangle\mapsto e^{-i\theta}|1\rangle`$ once, and the receiver learns the positions of any $`t`$ erased qubits. The receiver may jointly measure the survivors and a protected, signal-free register. The [model](model.md) specifies the timing and local estimation criterion. For $`1\le t<N`$, the optimal worst-pattern Fisher information is
+Each of $`N`$ qubits acquires the phase $`|1\rangle\mapsto e^{-i\theta}|1\rangle`$ once, and the receiver learns the positions of any $`t`$ erased qubits. The receiver may jointly measure the survivors and a protected, signal-free register. The [model](model.md) specifies the timing and local estimation criterion. For $`1\le t\lt N`$, the optimal worst-pattern Fisher information is
 
 ```math
 F^*_{N,t}=\frac{N^2}{(1+u_t)^2},\qquad
@@ -23,7 +23,7 @@ has conditional squared error $`[w(N-w)+(w-N/2)^2]/(1+u_t)^2=N^2/[4(1+u_t)^2]`$ 
 
 ## Probe and receiver
 
-Let $`|D_w^N\rangle`$ denote the normalized symmetric state at charge $`w`$. For $`t<N-1`$, set
+Let $`|D_w^N\rangle`$ denote the normalized symmetric state at charge $`w`$. For $`t\lt N-1`$, set
 
 ```math
 \beta=\frac{Nu_t}{N-1-u_t},\qquad a=\frac\beta2,\qquad
