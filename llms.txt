@@ -1,0 +1,26 @@
+# Quantum Erasure Budget Metrology
+
+> Sharp local Fisher information and an attaining spin probe for parallel phase sensing after flagged loss.
+
+## Story
+
+- [README](README.md): task, main results, worked numerical case and reproduction.
+- [Science route](science/README.md): how loss refinement, minimax estimation and coherent readout fit together.
+- [Model](science/model.md): parallel phase, arbitrary fixed locations, local operating point and protected memory.
+
+## Theorems
+
+- [Optimal probe and readout](science/optimal-probe.md): finite-N local QFI ceiling, beta-binomial Dicke probe, modular syndrome and saturating measurement.
+- [Random count](science/loss-distributions.md): simultaneous optimality at fixed input variance and scalar optimization for a count law.
+- [Protected memory](science/memory.md): necessary dimension for exact saturation and unassisted constructions.
+
+## Study and reproduce
+
+- [Watrous bridge](learning/WATROUS_BRIDGE.md): from states, channels and measurements to the physical receiver.
+- [Milestones](learning/MILESTONES.md): 30 questions through the theory and protocol.
+- [Worked example](learning/WORKED_EXAMPLE.md): four sensors, one erasure, no protected register.
+- [Attribution](references/RELATED_WORK.md): what the antecedents already prove.
+- [Finite checks](verification/README.md): commands and check coverage.
+
+The FI is local to a chosen nominal phase. The protected register is counted by its Hilbert-space dimension. In the converse, granting erased bits only enlarges the available information; the physical readout uses its encoded syndrome and the survivors.
+
